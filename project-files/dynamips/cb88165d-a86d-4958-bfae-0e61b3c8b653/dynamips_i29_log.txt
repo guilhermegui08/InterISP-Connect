@@ -1,0 +1,30 @@
+Dec 04 19:16:02.399 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Dec 04 19:16:02.399 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 47377.
+Dec 04 19:16:02.406 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 04 19:16:02.406 HYPERVISOR: exec_cmd: hypervisor working_dir /home/tar/ipl/5quinto_semestre/tar/projeto_teste/project-files/dynamips 
+Dec 04 19:16:02.407 GENERAL: working_dir=/home/tar/ipl/5quinto_semestre/tar/projeto_teste/project-files/dynamips
+Dec 04 19:16:02.407 HYPERVISOR: exec_cmd: hypervisor working_dir /home/tar/ipl/5quinto_semestre/tar/projeto_teste/project-files/dynamips/e118a6a9-d40e-4366-b1a7-4ccb024cd396 
+Dec 04 19:16:02.407 GENERAL: working_dir=/home/tar/ipl/5quinto_semestre/tar/projeto_teste/project-files/dynamips/e118a6a9-d40e-4366-b1a7-4ccb024cd396
+Dec 04 19:16:02.408 HYPERVISOR: exec_cmd: vm create R27 27 c7200 
+Dec 04 19:16:02.410 VM: VM R27 created.
+Dec 04 19:16:02.410 HYPERVISOR: exec_cmd: vm set_con_tcp_port R27 5043 
+Dec 04 19:16:02.411 HYPERVISOR: exec_cmd: c7200 get_mac_addr R27 
+Dec 04 19:16:02.411 HYPERVISOR: exec_cmd: vm get_status R27 
+Dec 04 19:16:02.411 HYPERVISOR: exec_cmd: vm slot_add_binding R27 0 0 C7200-IO-FE 
+Dec 04 19:16:02.412 HYPERVISOR: exec_cmd: vm set_disk0 R27 0 
+Dec 04 19:16:02.412 HYPERVISOR: exec_cmd: vm get_status R27 
+Dec 04 19:16:02.413 HYPERVISOR: exec_cmd: vm set_idle_pc R27 0x6062dd74 
+Dec 04 19:16:02.413 HYPERVISOR: exec_cmd: vm set_ios R27 /home/tar/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M10.image 
+Dec 04 19:16:02.414 HYPERVISOR: exec_cmd: c7200 set_mac_addr R27 ca1b.1070.0000 
+Dec 04 19:16:02.414 HYPERVISOR: exec_cmd: vm set_nvram R27 512 
+Dec 04 19:16:02.415 HYPERVISOR: exec_cmd: vm get_status R27 
+Dec 04 19:16:02.415 HYPERVISOR: exec_cmd: vm slot_remove_binding R27 0 0 
+Dec 04 19:16:02.415 HYPERVISOR: exec_cmd: vm get_status R27 
+Dec 04 19:16:02.416 HYPERVISOR: exec_cmd: vm slot_add_binding R27 0 0 C7200-IO-2FE 
+Dec 04 19:16:02.416 HYPERVISOR: exec_cmd: vm get_status R27 
+Dec 04 19:16:02.416 HYPERVISOR: exec_cmd: vm slot_add_binding R27 1 0 PA-2FE-TX 
+Dec 04 19:16:02.417 HYPERVISOR: exec_cmd: vm get_status R27 
+Dec 04 19:16:02.417 HYPERVISOR: exec_cmd: vm slot_add_binding R27 2 0 PA-2FE-TX 
+Dec 04 19:16:16.110 HYPERVISOR: exec_cmd: nio create_udp udp-e3d6d967-8293-4c3f-9cf8-8f6a170e1fbc 10212 127.0.0.1 10213 
+Dec 04 19:16:16.323 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R27 0 0 udp-e3d6d967-8293-4c3f-9cf8-8f6a170e1fbc 
+Dec 04 19:16:16.323 HYPERVISOR: exec_cmd: vm get_status R27 

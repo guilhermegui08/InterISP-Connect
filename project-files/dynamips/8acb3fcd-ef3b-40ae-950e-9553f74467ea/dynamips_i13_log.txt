@@ -1,0 +1,22 @@
+Nov 06 21:45:23.125 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Nov 06 21:45:23.125 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50375.
+Nov 06 21:45:23.132 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 06 21:45:23.133 HYPERVISOR: exec_cmd: hypervisor working_dir /home/tar/ipl/5quinto_semestre/tar/projeto_teste/project-files/dynamips 
+Nov 06 21:45:23.133 GENERAL: working_dir=/home/tar/ipl/5quinto_semestre/tar/projeto_teste/project-files/dynamips
+Nov 06 21:45:23.134 HYPERVISOR: exec_cmd: ethsw create Switch2 
+Nov 06 21:45:29.820 HYPERVISOR: exec_cmd: nio create_udp udp-8283c788-aff1-4d54-bf3d-e711b967f1cd 10097 127.0.0.1 10096 
+Nov 06 21:45:29.821 HYPERVISOR: exec_cmd: ethsw add_nio Switch2 udp-8283c788-aff1-4d54-bf3d-e711b967f1cd 
+Nov 06 21:45:29.841 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-8283c788-aff1-4d54-bf3d-e711b967f1cd 1 
+Nov 06 21:45:30.043 HYPERVISOR: exec_cmd: nio create_udp udp-fad1ba32-e62a-4c0f-ac92-ae40a7c78dfc 10101 127.0.0.1 10100 
+Nov 06 21:45:30.044 HYPERVISOR: exec_cmd: ethsw add_nio Switch2 udp-fad1ba32-e62a-4c0f-ac92-ae40a7c78dfc 
+Nov 06 21:45:30.065 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-fad1ba32-e62a-4c0f-ac92-ae40a7c78dfc 1 
+Nov 06 21:45:30.227 HYPERVISOR: exec_cmd: nio create_udp udp-309bf53c-2314-4a19-86ac-adcbb5f0c276 10105 127.0.0.1 10104 
+Nov 06 21:45:30.228 HYPERVISOR: exec_cmd: ethsw add_nio Switch2 udp-309bf53c-2314-4a19-86ac-adcbb5f0c276 
+Nov 06 21:45:30.248 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-309bf53c-2314-4a19-86ac-adcbb5f0c276 1 
+Nov 06 21:45:30.406 HYPERVISOR: exec_cmd: nio create_udp udp-ff2698e7-0f7b-4156-96cd-0d4211419992 10107 127.0.0.1 10106 
+Nov 06 21:45:30.407 HYPERVISOR: exec_cmd: ethsw add_nio Switch2 udp-ff2698e7-0f7b-4156-96cd-0d4211419992 
+Nov 06 21:45:30.410 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-ff2698e7-0f7b-4156-96cd-0d4211419992 1 
+Nov 06 22:08:57.928 HYPERVISOR: exec_cmd: ethsw delete Switch2 
+Nov 06 22:08:58.010 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 06 22:08:58.423 HYPERVISOR: Stopped.
+Nov 06 22:08:58.425 GENERAL: reset done.

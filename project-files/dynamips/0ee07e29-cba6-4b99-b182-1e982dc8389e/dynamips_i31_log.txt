@@ -1,0 +1,69 @@
+Jan 13 11:04:59.650 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jan 13 11:04:59.650 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 60891.
+Jan 13 11:04:59.656 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 13 11:04:59.656 HYPERVISOR: exec_cmd: hypervisor working_dir /media/sf_partilha/ipl/5quinto_semestre/tar/projeto_teste/project-files/dynamips 
+Jan 13 11:04:59.656 GENERAL: working_dir=/media/sf_partilha/ipl/5quinto_semestre/tar/projeto_teste/project-files/dynamips
+Jan 13 11:04:59.656 HYPERVISOR: exec_cmd: hypervisor working_dir /media/sf_partilha/ipl/5quinto_semestre/tar/projeto_teste/project-files/dynamips/cb88165d-a86d-4958-bfae-0e61b3c8b653 
+Jan 13 11:04:59.656 GENERAL: working_dir=/media/sf_partilha/ipl/5quinto_semestre/tar/projeto_teste/project-files/dynamips/cb88165d-a86d-4958-bfae-0e61b3c8b653
+Jan 13 11:04:59.657 HYPERVISOR: exec_cmd: vm create R29 29 c7200 
+Jan 13 11:04:59.660 VM: VM R29 created.
+Jan 13 11:04:59.660 HYPERVISOR: exec_cmd: vm set_con_tcp_port R29 5004 
+Jan 13 11:04:59.661 HYPERVISOR: exec_cmd: c7200 get_mac_addr R29 
+Jan 13 11:04:59.661 HYPERVISOR: exec_cmd: vm get_status R29 
+Jan 13 11:04:59.661 HYPERVISOR: exec_cmd: vm slot_add_binding R29 0 0 C7200-IO-FE 
+Jan 13 11:04:59.662 HYPERVISOR: exec_cmd: vm set_disk0 R29 0 
+Jan 13 11:04:59.662 HYPERVISOR: exec_cmd: vm get_status R29 
+Jan 13 11:04:59.662 HYPERVISOR: exec_cmd: vm set_idle_pc R29 0x6062dd74 
+Jan 13 11:04:59.663 HYPERVISOR: exec_cmd: vm set_ios R29 /home/xubuntuvms/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M10.image 
+Jan 13 11:04:59.663 HYPERVISOR: exec_cmd: c7200 set_mac_addr R29 ca1d.1251.0000 
+Jan 13 11:04:59.663 HYPERVISOR: exec_cmd: vm set_nvram R29 512 
+Jan 13 11:04:59.663 HYPERVISOR: exec_cmd: vm get_status R29 
+Jan 13 11:04:59.664 HYPERVISOR: exec_cmd: vm slot_remove_binding R29 0 0 
+Jan 13 11:04:59.664 HYPERVISOR: exec_cmd: vm get_status R29 
+Jan 13 11:04:59.664 HYPERVISOR: exec_cmd: vm slot_add_binding R29 0 0 C7200-IO-2FE 
+Jan 13 11:04:59.664 HYPERVISOR: exec_cmd: vm get_status R29 
+Jan 13 11:04:59.665 HYPERVISOR: exec_cmd: vm slot_add_binding R29 1 0 PA-2FE-TX 
+Jan 13 11:04:59.665 HYPERVISOR: exec_cmd: vm get_status R29 
+Jan 13 11:04:59.665 HYPERVISOR: exec_cmd: vm slot_add_binding R29 2 0 PA-2FE-TX 
+Jan 13 11:05:14.778 HYPERVISOR: exec_cmd: nio create_udp udp-fd2cc06b-5d43-4a4e-a98a-764e096765d7 10220 127.0.0.1 10221 
+Jan 13 11:05:14.991 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R29 0 1 udp-fd2cc06b-5d43-4a4e-a98a-764e096765d7 
+Jan 13 11:05:14.992 HYPERVISOR: exec_cmd: vm get_status R29 
+Jan 13 11:05:15.204 HYPERVISOR: exec_cmd: nio create_udp udp-b9f60cf3-5a80-41cf-8ddd-7ab60d11140b 10226 127.0.0.1 10227 
+Jan 13 11:05:15.205 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R29 0 0 udp-b9f60cf3-5a80-41cf-8ddd-7ab60d11140b 
+Jan 13 11:05:15.206 HYPERVISOR: exec_cmd: vm get_status R29 
+Jan 13 11:05:15.410 HYPERVISOR: exec_cmd: nio create_udp udp-ab991e15-7afb-4834-84de-c0db8719bbde 10230 127.0.0.1 10231 
+Jan 13 11:05:15.413 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R29 1 0 udp-ab991e15-7afb-4834-84de-c0db8719bbde 
+Jan 13 11:05:15.414 HYPERVISOR: exec_cmd: vm get_status R29 
+Jan 13 11:07:27.020 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Jan 13 11:07:27.022 VM: VM Ghost created.
+Jan 13 11:07:27.022 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/xubuntuvms/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M10.image 
+Jan 13 11:07:27.023 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jan 13 11:07:27.023 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost /media/sf_partilha/ipl/5quinto_semestre/tar/projeto_teste/project-files/dynamips/c7200-adventerprisek9-mz.152-4.M10.image-256.ghost 
+Jan 13 11:07:27.023 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Jan 13 11:07:27.024 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jan 13 11:07:27.025 HYPERVISOR: exec_cmd: vm set_config Ghost configs/i0_startup-config.cfg 
+Jan 13 11:07:27.025 HYPERVISOR: exec_cmd: vm start Ghost 
+Jan 13 11:07:28.165 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jan 13 11:07:28.166 HYPERVISOR: exec_cmd: vm stop Ghost 
+Jan 13 11:07:28.274 VM: VM Ghost shutdown.
+Jan 13 11:07:28.275 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Jan 13 11:07:28.276 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jan 13 11:07:28.277 VM: VM Ghost destroyed.
+Jan 13 11:07:28.282 HYPERVISOR: exec_cmd: vm set_ghost_status R29 2 
+Jan 13 11:07:28.282 HYPERVISOR: exec_cmd: vm set_ghost_file R29 /media/sf_partilha/ipl/5quinto_semestre/tar/projeto_teste/project-files/dynamips/c7200-adventerprisek9-mz.152-4.M10.image-256.ghost 
+Jan 13 11:07:28.282 HYPERVISOR: exec_cmd: vm get_status R29 
+Jan 13 11:07:28.283 HYPERVISOR: exec_cmd: vm set_config R29 configs/i29_startup-config.cfg configs/i29_private-config.cfg 
+Jan 13 11:07:28.284 HYPERVISOR: exec_cmd: vm start R29 
+Jan 13 16:16:02.657 HYPERVISOR: exec_cmd: vm get_status R29 
+Jan 13 16:16:02.658 HYPERVISOR: exec_cmd: vm stop R29 
+Jan 13 16:16:02.822 VM: VM R29 shutdown.
+Jan 13 16:16:02.825 HYPERVISOR: exec_cmd: vm extract_config R29 
+Jan 13 16:16:16.393 HYPERVISOR: exec_cmd: vm get_status R29 
+Jan 13 16:16:16.394 HYPERVISOR: exec_cmd: vm extract_config R29 
+Jan 13 16:16:16.977 HYPERVISOR: exec_cmd: vm get_status R29 
+Jan 13 16:16:16.977 HYPERVISOR: exec_cmd: vm extract_config R29 
+Jan 13 16:16:16.979 HYPERVISOR: exec_cmd: vm delete R29 
+Jan 13 16:16:16.980 VM: VM R29 destroyed.
+Jan 13 16:16:16.980 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 13 16:16:17.359 HYPERVISOR: Stopped.
+Jan 13 16:16:17.360 GENERAL: reset done.

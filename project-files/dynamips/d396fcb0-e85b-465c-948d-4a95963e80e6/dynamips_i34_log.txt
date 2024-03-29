@@ -1,0 +1,51 @@
+Jan 13 11:04:59.775 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jan 13 11:04:59.775 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 37117.
+Jan 13 11:04:59.782 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 13 11:04:59.782 HYPERVISOR: exec_cmd: hypervisor working_dir /media/sf_partilha/ipl/5quinto_semestre/tar/projeto_teste/project-files/dynamips 
+Jan 13 11:04:59.782 GENERAL: working_dir=/media/sf_partilha/ipl/5quinto_semestre/tar/projeto_teste/project-files/dynamips
+Jan 13 11:04:59.782 HYPERVISOR: exec_cmd: hypervisor working_dir /media/sf_partilha/ipl/5quinto_semestre/tar/projeto_teste/project-files/dynamips/cb1e22d0-525c-4955-92f6-0f57f1ad132c 
+Jan 13 11:04:59.782 GENERAL: working_dir=/media/sf_partilha/ipl/5quinto_semestre/tar/projeto_teste/project-files/dynamips/cb1e22d0-525c-4955-92f6-0f57f1ad132c
+Jan 13 11:04:59.783 HYPERVISOR: exec_cmd: vm create R32 32 c7200 
+Jan 13 11:04:59.784 VM: VM R32 created.
+Jan 13 11:04:59.784 HYPERVISOR: exec_cmd: vm set_con_tcp_port R32 5018 
+Jan 13 11:04:59.784 HYPERVISOR: exec_cmd: c7200 get_mac_addr R32 
+Jan 13 11:04:59.784 HYPERVISOR: exec_cmd: vm get_status R32 
+Jan 13 11:04:59.784 HYPERVISOR: exec_cmd: vm slot_add_binding R32 0 0 C7200-IO-FE 
+Jan 13 11:04:59.785 HYPERVISOR: exec_cmd: vm set_disk0 R32 0 
+Jan 13 11:04:59.785 HYPERVISOR: exec_cmd: vm get_status R32 
+Jan 13 11:04:59.785 HYPERVISOR: exec_cmd: vm set_idle_pc R32 0x6062dd74 
+Jan 13 11:04:59.786 HYPERVISOR: exec_cmd: vm set_ios R32 /home/xubuntuvms/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M10.image 
+Jan 13 11:04:59.786 HYPERVISOR: exec_cmd: c7200 set_mac_addr R32 ca20.4173.0000 
+Jan 13 11:04:59.786 HYPERVISOR: exec_cmd: vm set_nvram R32 512 
+Jan 13 11:04:59.787 HYPERVISOR: exec_cmd: vm get_status R32 
+Jan 13 11:04:59.787 HYPERVISOR: exec_cmd: vm slot_remove_binding R32 0 0 
+Jan 13 11:04:59.787 HYPERVISOR: exec_cmd: vm get_status R32 
+Jan 13 11:04:59.787 HYPERVISOR: exec_cmd: vm slot_add_binding R32 0 0 C7200-IO-2FE 
+Jan 13 11:04:59.788 HYPERVISOR: exec_cmd: vm get_status R32 
+Jan 13 11:04:59.788 HYPERVISOR: exec_cmd: vm slot_add_binding R32 1 0 PA-2FE-TX 
+Jan 13 11:04:59.788 HYPERVISOR: exec_cmd: vm get_status R32 
+Jan 13 11:04:59.788 HYPERVISOR: exec_cmd: vm slot_add_binding R32 2 0 PA-2FE-TX 
+Jan 13 11:09:11.697 HYPERVISOR: exec_cmd: nio create_udp udp-ee219493-45ff-4ea4-8c57-5cd4001cd742 10248 127.0.0.1 10249 
+Jan 13 11:09:11.923 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R32 0 0 udp-ee219493-45ff-4ea4-8c57-5cd4001cd742 
+Jan 13 11:09:11.928 HYPERVISOR: exec_cmd: vm get_status R32 
+Jan 13 11:09:17.579 HYPERVISOR: exec_cmd: vm set_ios R32 /home/xubuntuvms/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M10.image 
+Jan 13 11:12:51.940 HYPERVISOR: exec_cmd: vm set_ghost_status R32 2 
+Jan 13 11:12:51.942 HYPERVISOR: exec_cmd: vm set_ghost_file R32 /media/sf_partilha/ipl/5quinto_semestre/tar/projeto_teste/project-files/dynamips/c7200-adventerprisek9-mz.152-4.M10.image-256.ghost 
+Jan 13 11:12:51.942 HYPERVISOR: exec_cmd: vm get_status R32 
+Jan 13 11:12:51.943 HYPERVISOR: exec_cmd: vm set_config R32 configs/i32_startup-config.cfg 
+Jan 13 11:12:51.944 HYPERVISOR: exec_cmd: vm start R32 
+Jan 13 11:13:22.199 HYPERVISOR: exec_cmd: vm extract_config R32 
+Jan 13 16:10:54.008 HYPERVISOR: exec_cmd: vm extract_config R32 
+Jan 13 16:16:02.829 HYPERVISOR: exec_cmd: vm get_status R32 
+Jan 13 16:16:02.830 HYPERVISOR: exec_cmd: vm stop R32 
+Jan 13 16:16:02.897 VM: VM R32 shutdown.
+Jan 13 16:16:02.898 HYPERVISOR: exec_cmd: vm extract_config R32 
+Jan 13 16:16:16.403 HYPERVISOR: exec_cmd: vm get_status R32 
+Jan 13 16:16:16.403 HYPERVISOR: exec_cmd: vm extract_config R32 
+Jan 13 16:16:16.724 HYPERVISOR: exec_cmd: vm get_status R32 
+Jan 13 16:16:16.729 HYPERVISOR: exec_cmd: vm extract_config R32 
+Jan 13 16:16:16.738 HYPERVISOR: exec_cmd: vm delete R32 
+Jan 13 16:16:16.738 VM: VM R32 destroyed.
+Jan 13 16:16:16.740 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 13 16:16:16.827 HYPERVISOR: Stopped.
+Jan 13 16:16:16.827 GENERAL: reset done.

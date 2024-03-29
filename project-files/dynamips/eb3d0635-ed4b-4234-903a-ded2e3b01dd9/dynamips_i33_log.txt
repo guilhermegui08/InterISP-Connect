@@ -1,0 +1,53 @@
+Jan 13 11:04:59.732 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jan 13 11:04:59.732 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 45483.
+Jan 13 11:04:59.737 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 13 11:04:59.738 HYPERVISOR: exec_cmd: hypervisor working_dir /media/sf_partilha/ipl/5quinto_semestre/tar/projeto_teste/project-files/dynamips 
+Jan 13 11:04:59.738 GENERAL: working_dir=/media/sf_partilha/ipl/5quinto_semestre/tar/projeto_teste/project-files/dynamips
+Jan 13 11:04:59.738 HYPERVISOR: exec_cmd: hypervisor working_dir /media/sf_partilha/ipl/5quinto_semestre/tar/projeto_teste/project-files/dynamips/0ee07e29-cba6-4b99-b182-1e982dc8389e 
+Jan 13 11:04:59.738 GENERAL: working_dir=/media/sf_partilha/ipl/5quinto_semestre/tar/projeto_teste/project-files/dynamips/0ee07e29-cba6-4b99-b182-1e982dc8389e
+Jan 13 11:04:59.738 HYPERVISOR: exec_cmd: vm create R31 31 c7200 
+Jan 13 11:04:59.739 VM: VM R31 created.
+Jan 13 11:04:59.739 HYPERVISOR: exec_cmd: vm set_con_tcp_port R31 5006 
+Jan 13 11:04:59.740 HYPERVISOR: exec_cmd: c7200 get_mac_addr R31 
+Jan 13 11:04:59.740 HYPERVISOR: exec_cmd: vm get_status R31 
+Jan 13 11:04:59.740 HYPERVISOR: exec_cmd: vm slot_add_binding R31 0 0 C7200-IO-FE 
+Jan 13 11:04:59.740 HYPERVISOR: exec_cmd: vm set_disk0 R31 0 
+Jan 13 11:04:59.741 HYPERVISOR: exec_cmd: vm get_status R31 
+Jan 13 11:04:59.741 HYPERVISOR: exec_cmd: vm set_idle_pc R31 0x6062dd74 
+Jan 13 11:04:59.741 HYPERVISOR: exec_cmd: vm set_ios R31 /home/xubuntuvms/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M10.image 
+Jan 13 11:04:59.742 HYPERVISOR: exec_cmd: c7200 set_mac_addr R31 ca1f.4154.0000 
+Jan 13 11:04:59.742 HYPERVISOR: exec_cmd: vm set_nvram R31 512 
+Jan 13 11:04:59.742 HYPERVISOR: exec_cmd: vm get_status R31 
+Jan 13 11:04:59.742 HYPERVISOR: exec_cmd: vm slot_remove_binding R31 0 0 
+Jan 13 11:04:59.743 HYPERVISOR: exec_cmd: vm get_status R31 
+Jan 13 11:04:59.743 HYPERVISOR: exec_cmd: vm slot_add_binding R31 0 0 C7200-IO-2FE 
+Jan 13 11:04:59.743 HYPERVISOR: exec_cmd: vm get_status R31 
+Jan 13 11:04:59.743 HYPERVISOR: exec_cmd: vm slot_add_binding R31 1 0 PA-2FE-TX 
+Jan 13 11:04:59.744 HYPERVISOR: exec_cmd: vm get_status R31 
+Jan 13 11:04:59.744 HYPERVISOR: exec_cmd: vm slot_add_binding R31 2 0 PA-2FE-TX 
+Jan 13 11:09:36.346 HYPERVISOR: exec_cmd: vm set_ios R31 /home/xubuntuvms/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M10.image 
+Jan 13 11:09:38.009 HYPERVISOR: exec_cmd: vm set_ios R31 /home/xubuntuvms/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M10.image 
+Jan 13 11:09:44.664 HYPERVISOR: exec_cmd: nio create_udp udp-1b209b19-5005-4744-9550-f89f5e74db67 10252 127.0.0.1 10253 
+Jan 13 11:09:44.882 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R31 0 0 udp-1b209b19-5005-4744-9550-f89f5e74db67 
+Jan 13 11:09:44.884 HYPERVISOR: exec_cmd: vm get_status R31 
+Jan 13 11:10:06.482 HYPERVISOR: exec_cmd: vm set_ios R31 /home/xubuntuvms/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M10.image 
+Jan 13 11:12:54.052 HYPERVISOR: exec_cmd: vm set_ghost_status R31 2 
+Jan 13 11:12:54.053 HYPERVISOR: exec_cmd: vm set_ghost_file R31 /media/sf_partilha/ipl/5quinto_semestre/tar/projeto_teste/project-files/dynamips/c7200-adventerprisek9-mz.152-4.M10.image-256.ghost 
+Jan 13 11:12:54.053 HYPERVISOR: exec_cmd: vm get_status R31 
+Jan 13 11:12:54.055 HYPERVISOR: exec_cmd: vm set_config R31 configs/i31_startup-config.cfg 
+Jan 13 11:12:54.055 HYPERVISOR: exec_cmd: vm start R31 
+Jan 13 11:13:24.288 HYPERVISOR: exec_cmd: vm extract_config R31 
+Jan 13 15:35:25.771 HYPERVISOR: exec_cmd: vm extract_config R31 
+Jan 13 16:16:02.766 HYPERVISOR: exec_cmd: vm get_status R31 
+Jan 13 16:16:02.766 HYPERVISOR: exec_cmd: vm stop R31 
+Jan 13 16:16:02.843 VM: VM R31 shutdown.
+Jan 13 16:16:02.843 HYPERVISOR: exec_cmd: vm extract_config R31 
+Jan 13 16:16:16.402 HYPERVISOR: exec_cmd: vm get_status R31 
+Jan 13 16:16:16.403 HYPERVISOR: exec_cmd: vm extract_config R31 
+Jan 13 16:16:16.722 HYPERVISOR: exec_cmd: vm get_status R31 
+Jan 13 16:16:16.728 HYPERVISOR: exec_cmd: vm extract_config R31 
+Jan 13 16:16:16.733 HYPERVISOR: exec_cmd: vm delete R31 
+Jan 13 16:16:16.733 VM: VM R31 destroyed.
+Jan 13 16:16:16.739 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 13 16:16:16.948 HYPERVISOR: Stopped.
+Jan 13 16:16:16.948 GENERAL: reset done.

@@ -1,0 +1,51 @@
+Jan 13 11:04:59.607 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jan 13 11:04:59.607 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 45953.
+Jan 13 11:04:59.614 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 13 11:04:59.614 HYPERVISOR: exec_cmd: hypervisor working_dir /media/sf_partilha/ipl/5quinto_semestre/tar/projeto_teste/project-files/dynamips 
+Jan 13 11:04:59.614 GENERAL: working_dir=/media/sf_partilha/ipl/5quinto_semestre/tar/projeto_teste/project-files/dynamips
+Jan 13 11:04:59.614 HYPERVISOR: exec_cmd: hypervisor working_dir /media/sf_partilha/ipl/5quinto_semestre/tar/projeto_teste/project-files/dynamips/0bb7d163-ba26-4850-8ddf-3e20d7478355 
+Jan 13 11:04:59.614 GENERAL: working_dir=/media/sf_partilha/ipl/5quinto_semestre/tar/projeto_teste/project-files/dynamips/0bb7d163-ba26-4850-8ddf-3e20d7478355
+Jan 13 11:04:59.614 HYPERVISOR: exec_cmd: vm create R28 28 c7200 
+Jan 13 11:04:59.617 VM: VM R28 created.
+Jan 13 11:04:59.617 HYPERVISOR: exec_cmd: vm set_con_tcp_port R28 5044 
+Jan 13 11:04:59.618 HYPERVISOR: exec_cmd: c7200 get_mac_addr R28 
+Jan 13 11:04:59.618 HYPERVISOR: exec_cmd: vm get_status R28 
+Jan 13 11:04:59.618 HYPERVISOR: exec_cmd: vm slot_add_binding R28 0 0 C7200-IO-FE 
+Jan 13 11:04:59.618 HYPERVISOR: exec_cmd: vm set_disk0 R28 0 
+Jan 13 11:04:59.620 HYPERVISOR: exec_cmd: vm get_status R28 
+Jan 13 11:04:59.620 HYPERVISOR: exec_cmd: vm set_idle_pc R28 0x6062dd74 
+Jan 13 11:04:59.621 HYPERVISOR: exec_cmd: vm set_ios R28 /home/xubuntuvms/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M10.image 
+Jan 13 11:04:59.621 HYPERVISOR: exec_cmd: c7200 set_mac_addr R28 ca1c.1090.0000 
+Jan 13 11:04:59.621 HYPERVISOR: exec_cmd: vm set_nvram R28 512 
+Jan 13 11:04:59.622 HYPERVISOR: exec_cmd: vm get_status R28 
+Jan 13 11:04:59.622 HYPERVISOR: exec_cmd: vm slot_remove_binding R28 0 0 
+Jan 13 11:04:59.623 HYPERVISOR: exec_cmd: vm get_status R28 
+Jan 13 11:04:59.623 HYPERVISOR: exec_cmd: vm slot_add_binding R28 0 0 C7200-IO-2FE 
+Jan 13 11:04:59.623 HYPERVISOR: exec_cmd: vm get_status R28 
+Jan 13 11:04:59.623 HYPERVISOR: exec_cmd: vm slot_add_binding R28 1 0 PA-2FE-TX 
+Jan 13 11:04:59.624 HYPERVISOR: exec_cmd: vm get_status R28 
+Jan 13 11:04:59.624 HYPERVISOR: exec_cmd: vm slot_add_binding R28 2 0 PA-2FE-TX 
+Jan 13 11:05:13.869 HYPERVISOR: exec_cmd: nio create_udp udp-9e69bb0d-8152-4eb2-af3a-dd597def3d04 10208 127.0.0.1 10209 
+Jan 13 11:05:14.092 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R28 0 0 udp-9e69bb0d-8152-4eb2-af3a-dd597def3d04 
+Jan 13 11:05:14.094 HYPERVISOR: exec_cmd: vm get_status R28 
+Jan 13 11:05:14.511 HYPERVISOR: exec_cmd: nio create_udp udp-82c1b250-6301-48e6-9672-96b30a343cf5 10214 127.0.0.1 10215 
+Jan 13 11:05:14.558 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R28 0 1 udp-82c1b250-6301-48e6-9672-96b30a343cf5 
+Jan 13 11:05:14.559 HYPERVISOR: exec_cmd: vm get_status R28 
+Jan 13 11:08:00.507 HYPERVISOR: exec_cmd: vm set_ghost_status R28 2 
+Jan 13 11:08:00.508 HYPERVISOR: exec_cmd: vm set_ghost_file R28 /media/sf_partilha/ipl/5quinto_semestre/tar/projeto_teste/project-files/dynamips/c7200-adventerprisek9-mz.152-4.M10.image-256.ghost 
+Jan 13 11:08:00.510 HYPERVISOR: exec_cmd: vm get_status R28 
+Jan 13 11:08:00.516 HYPERVISOR: exec_cmd: vm set_config R28 configs/i28_startup-config.cfg configs/i28_private-config.cfg 
+Jan 13 11:08:00.516 HYPERVISOR: exec_cmd: vm start R28 
+Jan 13 16:16:02.656 HYPERVISOR: exec_cmd: vm get_status R28 
+Jan 13 16:16:02.658 HYPERVISOR: exec_cmd: vm stop R28 
+Jan 13 16:16:02.760 VM: VM R28 shutdown.
+Jan 13 16:16:02.761 HYPERVISOR: exec_cmd: vm extract_config R28 
+Jan 13 16:16:16.392 HYPERVISOR: exec_cmd: vm get_status R28 
+Jan 13 16:16:16.394 HYPERVISOR: exec_cmd: vm extract_config R28 
+Jan 13 16:16:16.849 HYPERVISOR: exec_cmd: vm get_status R28 
+Jan 13 16:16:16.850 HYPERVISOR: exec_cmd: vm extract_config R28 
+Jan 13 16:16:16.852 HYPERVISOR: exec_cmd: vm delete R28 
+Jan 13 16:16:16.852 VM: VM R28 destroyed.
+Jan 13 16:16:16.853 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 13 16:16:17.276 HYPERVISOR: Stopped.
+Jan 13 16:16:17.276 GENERAL: reset done.

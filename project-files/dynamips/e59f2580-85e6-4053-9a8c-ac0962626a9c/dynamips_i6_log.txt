@@ -1,0 +1,53 @@
+Dec 04 16:21:01.486 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Dec 04 16:21:01.486 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 36673.
+Dec 04 16:21:01.490 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 04 16:21:01.490 HYPERVISOR: exec_cmd: hypervisor working_dir /home/tar/ipl/5quinto_semestre/tar/projeto_teste/project-files/dynamips 
+Dec 04 16:21:01.491 GENERAL: working_dir=/home/tar/ipl/5quinto_semestre/tar/projeto_teste/project-files/dynamips
+Dec 04 16:21:01.491 HYPERVISOR: exec_cmd: hypervisor working_dir /home/tar/ipl/5quinto_semestre/tar/projeto_teste/project-files/dynamips/268cf294-9ba1-4719-bde7-9f722f98ce48 
+Dec 04 16:21:01.491 GENERAL: working_dir=/home/tar/ipl/5quinto_semestre/tar/projeto_teste/project-files/dynamips/268cf294-9ba1-4719-bde7-9f722f98ce48
+Dec 04 16:21:01.492 HYPERVISOR: exec_cmd: vm create R4 4 c7200 
+Dec 04 16:21:01.493 VM: VM R4 created.
+Dec 04 16:21:01.494 HYPERVISOR: exec_cmd: vm set_con_tcp_port R4 5010 
+Dec 04 16:21:01.494 HYPERVISOR: exec_cmd: c7200 get_mac_addr R4 
+Dec 04 16:21:01.494 HYPERVISOR: exec_cmd: vm get_status R4 
+Dec 04 16:21:01.495 HYPERVISOR: exec_cmd: vm slot_add_binding R4 0 0 C7200-IO-FE 
+Dec 04 16:21:01.495 HYPERVISOR: exec_cmd: vm set_disk0 R4 0 
+Dec 04 16:21:01.496 HYPERVISOR: exec_cmd: vm get_status R4 
+Dec 04 16:21:01.496 HYPERVISOR: exec_cmd: vm set_idle_pc R4 0x6062dd74 
+Dec 04 16:21:01.496 HYPERVISOR: exec_cmd: vm set_ios R4 /home/tar/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M10.image 
+Dec 04 16:21:01.497 HYPERVISOR: exec_cmd: c7200 set_mac_addr R4 ca04.0e75.0000 
+Dec 04 16:21:01.497 HYPERVISOR: exec_cmd: vm set_nvram R4 512 
+Dec 04 16:21:01.498 HYPERVISOR: exec_cmd: vm get_status R4 
+Dec 04 16:21:01.498 HYPERVISOR: exec_cmd: vm slot_remove_binding R4 0 0 
+Dec 04 16:21:01.498 HYPERVISOR: exec_cmd: vm get_status R4 
+Dec 04 16:21:01.499 HYPERVISOR: exec_cmd: vm slot_add_binding R4 0 0 C7200-IO-2FE 
+Dec 04 16:21:01.499 HYPERVISOR: exec_cmd: vm get_status R4 
+Dec 04 16:21:01.499 HYPERVISOR: exec_cmd: vm slot_add_binding R4 1 0 PA-2FE-TX 
+Dec 04 16:21:01.500 HYPERVISOR: exec_cmd: vm get_status R4 
+Dec 04 16:21:01.500 HYPERVISOR: exec_cmd: vm slot_add_binding R4 2 0 PA-2FE-TX 
+Dec 04 16:21:04.385 HYPERVISOR: exec_cmd: nio create_udp udp-6ff1e7f5-6eca-47a4-94c0-fed00f6427f9 10038 127.0.0.1 10039 
+Dec 04 16:21:04.594 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 1 udp-6ff1e7f5-6eca-47a4-94c0-fed00f6427f9 
+Dec 04 16:21:04.595 HYPERVISOR: exec_cmd: vm get_status R4 
+Dec 04 16:21:10.908 HYPERVISOR: exec_cmd: nio create_udp udp-dd4d9900-015b-4a41-8643-219989300ed1 10002 127.0.0.1 10003 
+Dec 04 16:21:10.913 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 0 udp-dd4d9900-015b-4a41-8643-219989300ed1 
+Dec 04 16:21:10.913 HYPERVISOR: exec_cmd: vm get_status R4 
+Dec 04 16:22:16.616 HYPERVISOR: exec_cmd: vm set_ghost_status R4 2 
+Dec 04 16:22:16.617 HYPERVISOR: exec_cmd: vm set_ghost_file R4 /home/tar/ipl/5quinto_semestre/tar/projeto_teste/project-files/dynamips/c7200-adventerprisek9-mz.152-4.M10.image-256.ghost 
+Dec 04 16:22:16.617 HYPERVISOR: exec_cmd: vm get_status R4 
+Dec 04 16:22:16.620 HYPERVISOR: exec_cmd: vm set_config R4 configs/i4_startup-config.cfg configs/i4_private-config.cfg 
+Dec 04 16:22:16.621 HYPERVISOR: exec_cmd: vm start R4 
+Dec 04 16:22:47.129 HYPERVISOR: exec_cmd: vm extract_config R4 
+Dec 04 16:23:17.133 HYPERVISOR: exec_cmd: vm extract_config R4 
+Dec 04 17:45:03.611 HYPERVISOR: exec_cmd: vm get_status R4 
+Dec 04 17:45:03.613 HYPERVISOR: exec_cmd: vm stop R4 
+Dec 04 17:45:03.718 VM: VM R4 shutdown.
+Dec 04 17:45:03.722 HYPERVISOR: exec_cmd: vm extract_config R4 
+Dec 04 17:45:07.841 HYPERVISOR: exec_cmd: vm get_status R4 
+Dec 04 17:45:07.843 HYPERVISOR: exec_cmd: vm extract_config R4 
+Dec 04 17:45:08.459 HYPERVISOR: exec_cmd: vm get_status R4 
+Dec 04 17:45:08.463 HYPERVISOR: exec_cmd: vm extract_config R4 
+Dec 04 17:45:08.494 HYPERVISOR: exec_cmd: vm delete R4 
+Dec 04 17:45:08.497 VM: VM R4 destroyed.
+Dec 04 17:45:08.513 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 04 17:45:08.918 HYPERVISOR: Stopped.
+Dec 04 17:45:08.918 GENERAL: reset done.
