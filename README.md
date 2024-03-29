@@ -3,32 +3,31 @@ InterISP Connect is a comprehensive project focused on planning, designing, conf
 
  ## Network Optimization and Design Considerations
 
-Addressing Optimization:
+1. **Addressing Optimization:**
+   - Utilize link-local addresses on all interfaces with IPv6 to meet network requirements efficiently.
 
-Utilize link-local addresses on all interfaces with IPv6 to meet network requirements efficiently.
-IGP Domain Configuration for ISP Tier 1:
+2. **IGP Domain Configuration for ISP Tier 1:**
+   - Implement OSPFv3 in a multi-area environment with sufficient routers to support diverse area types.
 
-Implement OSPFv3 in a multi-area environment with sufficient routers to support diverse area types.
-Traffic Routing from ISPs Tier 3:
+3. **Traffic Routing from ISPs Tier 3:**
+   - Direct traffic from Tier 3 ISPs through Tier 2A, with Tier 2B used as a backup in case of Tier 2A link failure.
 
-Direct traffic from Tier 3 ISPs through Tier 2A, with Tier 2B used as a backup in case of Tier 2A link failure.
-Redundancy and Load Balancing:
+4. **Redundancy and Load Balancing:**
+   - Ensure redundant and parallel use of links between Tier 3 and Tier 2, enhancing network resilience.
 
-Ensure redundant and parallel use of links between Tier 3 and Tier 2, enhancing network resilience.
-Preferred Links in Tier 1 Connections:
+5. **Preferred Links in Tier 1 Connections:**
+   - Define preferred links in Tier 1 connections to either Tier 2, optimizing network performance.
 
-Define preferred links in Tier 1 connections to either Tier 2, optimizing network performance.
-BGP Implementation in ISP Tier 1:
+6. **BGP Implementation in ISP Tier 1:**
+   - Implement BGP with reduced iBGP connections to manage router growth efficiently, prioritizing confederations.
 
-Implement BGP with reduced iBGP connections to manage router growth efficiently, prioritizing confederations.
-Quality of Service (QoS) in Tier 2A:
+7. **Quality of Service (QoS) in Tier 2A:**
+   - Implement QoS in Tier 2A to prioritize network traffic and enhance service quality.
 
-Implement QoS in Tier 2A to prioritize network traffic and enhance service quality.
-Design Considerations for Corporate Client:
-
-Utilize private addressing for the corporate client.
-Implement IPv4 addressing for the corporate client.
-Connect company sites via L3 VPN over MPLS technology.
-Consider identified protocols for branch connectivity with operator PE routers.
-Ensure internet connectivity for internal equipment through the headquarters router.
-Implement QoS for the corporate client to manage network traffic effectively.
+8. **Design Considerations for Corporate Client:**
+   - Utilize private addressing for the corporate client.
+   - Implement IPv4 addressing for the corporate client.
+   - Connect company sites via L3 VPN over MPLS technology.
+   - Consider identified protocols for branch connectivity with operator PE routers.
+   - Ensure internet connectivity for internal equipment through the headquarters router.
+   - Implement QoS for the corporate client to manage network traffic effectively.
