@@ -1,5 +1,7 @@
 # InterISP-Connect
 InterISP Connect is a comprehensive project focused on planning, designing, configuring, and documenting a network scenario involving multiple Internet Service Providers (ISPs) interconnected to provide connectivity to a corporate client. Leveraging the capabilities of the GNS3 application, the project encompasses tasks related to network design, configuration, and documentation to ensure seamless connectivity and robust network performance for the client's enterprise needs.
+![topologia](https://github.com/guilhermegui08/InterISP-Connect/assets/112128696/580bb7dc-39fa-4edc-8fe9-37cf5ea7b013)
+
 
  ## Network Optimization and Design Considerations
 
